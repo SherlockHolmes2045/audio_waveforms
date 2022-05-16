@@ -9,6 +9,7 @@
 .idea/
 .vscode/
 build/
+.fvm
 
 # Android related
 **/android/**/gradle-wrapper.jar

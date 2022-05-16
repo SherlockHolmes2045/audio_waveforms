@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '/audio_waveforms.dart';
-import 'painters/recorder_wave_painter.dart';
 import 'base/wave_clipper.dart';
+import 'painters/recorder_wave_painter.dart';
 
 class AudioWaveforms extends StatefulWidget {
   final Size size;
@@ -167,7 +168,7 @@ class _AudioWaveformsState extends State<AudioWaveforms> {
       _totalBackDistance =
           _totalBackDistance + Offset(widget.waveStyle.spacing, 0.0);
     }
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       setState(() {});
     });
   }
